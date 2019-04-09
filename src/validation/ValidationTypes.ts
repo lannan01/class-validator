@@ -111,64 +111,64 @@ export class ValidationTypes {
 
             /* system chceck */
             case this.NESTED_VALIDATION:
-                return eachPrefix + "nested property $property must be either object or array";
+                return eachPrefix + "嵌套类型 $property 必须是对象或数组";
             /* common checkers */
             case this.IS_DEFINED:
-                return eachPrefix + "$property should not be null or undefined";
+                return eachPrefix + "$property不能为空";
             case this.EQUALS:
-                return eachPrefix + "$property must be equal to $constraint1";
+                return eachPrefix + "$property 必须等于 $constraint1";
             case this.NOT_EQUALS:
-                return eachPrefix + "$property should not be equal to $constraint1";
+                return eachPrefix + "$property 不能等于 $constraint1";
             case this.IS_EMPTY:
-                return eachPrefix + "$property must be empty";
+                return eachPrefix + "$property 必须为空";
             case this.IS_NOT_EMPTY:
-                return eachPrefix + "$property should not be empty";
+                return eachPrefix + "$property 不能为空";
             case this.IS_IN:
-                return eachPrefix + "$property must be one of the following values: $constraint1";
+                return eachPrefix + "$property 必须是 $constraint1 的其中之一";
             case this.IS_NOT_IN:
-                return eachPrefix + "$property should not be one of the following values: $constraint1";
+                return eachPrefix + "$property 不能包含 $constraint1";
 
             /* type checkers */
             case this.IS_BOOLEAN:
-                return eachPrefix + "$property must be a boolean value";
+                return eachPrefix + "$property 必须是布尔值";
             case this.IS_DATE:
-                return eachPrefix + "$property must be a Date instance";
+                return eachPrefix + "$property 必须是日期对象";
             case this.IS_NUMBER:
-                return eachPrefix + "$property must be a number";
+                return eachPrefix + "$property 必须是数字";
             case this.IS_INT:
-                return eachPrefix + "$property must be an integer number";
+                return eachPrefix + "$property 必须是整数";
             case this.IS_STRING:
-                return eachPrefix + "$property must be a string";
+                return eachPrefix + "$property 必须是字符串";
             case this.IS_DATE_STRING:
-                return eachPrefix + "$property must be a ISOString";
+                return eachPrefix + "$property 必须是ISO8061日期字符串";
             case this.IS_ARRAY:
-                return eachPrefix + "$property must be an array";
+                return eachPrefix + "$property 必须是数组";
             case this.IS_ENUM:
-                return eachPrefix + "$property must be a valid enum value";
+                return eachPrefix + "$property 必须是有效的枚举值";
 
             /* number checkers */
             case this.IS_DIVISIBLE_BY:
-                return eachPrefix + "$property must be divisible by $constraint1";
+                return eachPrefix + "$property 必须可以被 $constraint1 整除";
             case this.IS_POSITIVE:
-                return eachPrefix + "$property must be a positive number";
+                return eachPrefix + "$property 必须是正数";
             case this.IS_NEGATIVE:
-                return eachPrefix + "$property must be a negative number";
+                return eachPrefix + "$property 必须是负数";
             case this.MIN:
-                return eachPrefix + "$property must not be less than $constraint1";
+                return eachPrefix + "$property 不能小于 $constraint1";
             case this.MAX:
-                return eachPrefix + "$property must not be greater than $constraint1";
+                return eachPrefix + "$property 不能大于 $constraint1";
 
             /* date checkers */
             case this.MIN_DATE:
-                return "minimal allowed date for " + eachPrefix + "$property is $constraint1";
+                return "最小日期必须是" + eachPrefix + "$property is $constraint1";
             case this.MAX_DATE:
-                return "maximal allowed date for " + eachPrefix + "$property is $constraint1";
+                return "最大日期必须是 " + eachPrefix + "$property is $constraint1";
 
             /* string-as-type checkers */
             case this.IS_BOOLEAN_STRING:
-                return eachPrefix + "$property must be a boolean string";
+                return eachPrefix + "$property 必须是布尔值字符串";
             case this.IS_NUMBER_STRING:
-                return eachPrefix + "$property must be a number string";
+                return eachPrefix + "$property 必须是数字字符串";
 
             /* string checkers */
             case this.CONTAINS:
